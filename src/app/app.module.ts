@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CubeComponent } from './cube/cube.component';
+import { PanoramaEquirectangularComponent } from './panorama-equirectangular/panorama-equirectangular.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CubeComponent,
+    PanoramaEquirectangularComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
