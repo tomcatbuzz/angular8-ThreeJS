@@ -233,7 +233,7 @@ export class PanoramaEquirectangularComponent implements AfterViewInit {
     this.isUserInteracting = false;
   }
 
-  public onWheel(event: MouseWheelEvent) {
+  public onWheel(event: WheelEvent) {
     this.camera.fov += event.deltaY * 0.05;
     this.camera.updateProjectionMatrix();
   }
